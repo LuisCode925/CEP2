@@ -1,6 +1,6 @@
     <footer class="site-footer">
         <div class="contenedor redes-footer">
-            <p>Diseñado por Luis Mario Chávez Martínez | Copyright &copy; 2021</p>
+            <p class="copy" >Diseñado por Luis Mario Chávez Martínez | <a href="copyright.php">Copyright &copy; 2021</a></p>
             <div class="redes">
                 <i class="lab la-facebook-square"></i>
                 <i class="lab la-twitter"></i>

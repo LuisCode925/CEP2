@@ -108,6 +108,16 @@ input[type="number"]{
     margin-top: auto;
     padding: 1rem 0;
 }
+
+.copy a {
+    color: white;
+}
+
+.copy a:hover {
+    color: var(--colorPrincipal);
+    cursor: pointer;
+}
+
 .redes-footer {
     display: flex;
     justify-content: space-between;

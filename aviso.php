@@ -157,12 +157,11 @@
             Los Artículos 4, 6, 10, 12, 13, 14 y 15 del presente Contrato sobrevivirán a la terminación del mismo por cualquier razón.</p>
     </ol>
 
-    <p>Si desea más información sobre el Sitio Web<br>  
-    o sobre el presente Contrato, contactar con:<br>
-    Dirección: Luis Mario Chávez Martínez<br>
-    Dirección de correo electrónico:<br>
-    195925luis@gmail.com<br>
-    Todos los derechos reservados.</p> 
+    <p>Si desea más información sobre el Sitio Web o sobre el presente Contrato, contactar con:<br>
+    <ul>
+        <li>Dirección: Luis Mario Chávez Martínez</li>
+        <li>Dirección de correo electrónico: 195925luis@gmail.com</li>
+    </ul>
     </main>
     <?php include_once('./includes/footer.php');?>
 
