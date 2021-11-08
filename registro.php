@@ -61,7 +61,7 @@
 
                     <div class="terminos">
                         <input type="checkbox" name="terminos" id="terminos">
-                        <label for="terminos">Aceptar terminos y condiciones</label>
+                        <label for="terminos">Aceptar Términos y Condiciones</label>
                     </div>
 
                     <input class="btn" type="submit" value="Crear cuenta" id="btn-registrar" disabled="disabled">
