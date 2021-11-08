@@ -28,7 +28,7 @@
 
         <h2>Formulario de Registro</h2>
 
-        <form action="registro.php" method="POST" autocomplete="off">
+        <form id="registro" action="registro.php" method="POST" autocomplete="off">
             <div>
                 <h3>Informacion Personal</h3>
 
@@ -44,12 +44,12 @@
 
                 <div>
                     <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="correo" required>
+                    <input type="email" name="correo" id="correo">
                 </div>
                 
                 <div>
                     <label for="passwd">Contraseña:</label>
-                    <input type="password" name="passwd" id="passwd" required>
+                    <input type="password" name="passwd" id="passwd">
                 </div>
 
                 <div>
@@ -64,7 +64,7 @@
                         <label for="terminos">Aceptar Términos y Condiciones</label>
                     </div>
 
-                    <input class="btn" type="submit" value="Crear cuenta" id="btn-registrar" disabled="disabled">
+                    <input class="btn" type="submit" value="Crear cuenta" id="btn-registrar">
                 
                 </div>
                 
@@ -73,6 +73,29 @@
     </main>
 
     <?php require_once('./includes/footer.php'); ?>
+
+    <script>
+        $(document).ready(function () {
+
+            $( "#registro" ).submit( ( event ) => {
+                if ($("#nombre").val().length == 0 || $("#apellidos").val().length == 0 || 
+                    $("#correo").val().length == 0 || $("#passwd").val().length == 0 || 
+                    $("#repass").val().length == 0) {
+                    alertify.error('Todos los campos del formulario son necesarios.');
+                } else {
+                    if( $("#terminos").prop('checked') == false) {
+	                    alertify.confirm("Es necesario aceptar los terminos y condiciones para utilizar el servicio.",
+        	                () => alertify.success('Ok'),
+        	                () => alertify.error('Cancel'));
+                    } else {
+                        alertify.success('Usuario creado satisfactoriamente');
+                    }
+                }
+                event.preventDefault();
+            });
+
+        });     
+    </script>
     
 </body>
 </html>
